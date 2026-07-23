@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050706" />
+  <meta name="description" content="NOCTA: control de acceso inteligente y monitoreo de cámaras con inteligencia artificial." />
+  <title>NOCTA | Access + Vision</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/favicon-192.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-bg" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="NOCTA, ir al inicio">
+      <img src="assets/nocta-wordmark.png" alt="NOCTA" class="brand-wordmark">
+      <span class="brand-tag">ACCESS + VISION</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      <a href="#soluciones">Soluciones</a>
+      <a href="#acceso">Control de acceso</a>
+      <a href="#vision">NoctaVision</a>
+      <a href="#apps">Apps</a>
+      <a href="#seguridad">Seguridad</a>
+    </nav>
+    <a class="button button-primary small" href="#piloto">Solicitar demo</a>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero section">
+      <div class="hero-copy reveal">
+        <div class="eyebrow pill">PLATAFORMA DE SEGURIDAD PARA COMUNIDADES</div>
+        <h1>Control de acceso y cámaras con IA en una sola plataforma.</h1>
+        <p>
+          NOCTA conecta Resident, Guard, Admin y NoctaVision para autorizar accesos,
+          validar ingresos, detectar eventos y coordinar respuestas con trazabilidad completa.
+        </p>
+        <div class="actions">
+          <a href="#soluciones" class="button button-primary">Ver soluciones <span>→</span></a>
+          <a href="#acceso" class="button button-ghost">Ver demo interactiva</a>
+        </div>
+        <div class="quick-pills">
+          <span>Acceso verificable</span>
+          <span>Cámaras IP</span>
+          <span>Eventos auditables</span>
+        </div>
+      </div>
+
+      <div class="hero-art reveal">
+        <div class="scan-ring"></div>
+        <img src="assets/nocta-mark.png" alt="Isotipo NOCTA: N metálica con ojo verde" class="hero-mark">
+        <div class="orbit orbit-1"></div>
+        <div class="orbit orbit-2"></div>
+        <div class="hero-modules">
+          <article><strong>Resident</strong><span>Autoriza</span></article>
+          <article><strong>Guard</strong><span>Valida</span></article>
+          <article><strong>Admin</strong><span>Supervisa</span></article>
+          <article><strong>Vision</strong><span>Detecta</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="soluciones" class="section">
+      <div class="section-heading reveal">
+        <span>DOS SOLUCIONES COMERCIALES</span>
+        <h2>NOCTA cubre acceso y monitoreo inteligente.</h2>
+        <p>Primero controla quién puede entrar. Luego conecta las cámaras para entender lo que realmente ocurre y activar respuestas.</p>
+      </div>
+
+      <div class="solution-switch reveal">
+        <button class="solution-card active" data-solution="access">
+          <div class="solution-icon">⌾</div>
+          <h3>Control de acceso inteligente</h3>
+          <p>Resident autoriza, Guard valida y Admin supervisa toda la operación.</p>
+        </button>
+        <button class="solution-card" data-solution="vision">
+          <div class="solution-icon">◉</div>
+          <h3>Monitoreo de cámaras con IA</h3>
+          <p>NoctaVision analiza video, detecta eventos y genera alertas operacionales.</p>
+        </button>
+      </div>
+
+      <div class="selected-solution reveal">
+        <div class="selected-icon" id="selectedIcon">⌾</div>
+        <div>
+          <span class="mini-label">SOLUCIÓN SELECCIONADA</span>
+          <h3 id="selectedTitle">Control de acceso inteligente</h3>
+          <p id="selectedText">Gestiona, valida y registra cada acceso desde una sola plataforma.</p>
+          <div class="feature-grid" id="selectedFeatures">
+            <span>Invitaciones digitales</span>
+            <span>Validación por QR</span>
+            <span>Roles y permisos</span>
+            <span>Historial auditable</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="acceso" class="section">
+      <div class="section-heading reveal">
+        <span>CONTROL DE ACCESO INTELIGENTE</span>
+        <h2>Del permiso del residente al acceso registrado.</h2>
+        <p>Invitaciones, QR, validación del guardia y auditoría administrativa en un flujo único y verificable.</p>
+      </div>
+
+      <div class="demo-grid">
+        <div class="demo-steps reveal">
+          <div class="demo-head">
+            <div><span>DEMO INTERACTIVA</span><h3>Flujo de acceso</h3></div>
+            <button id="nextAccess" class="button button-primary small">Avanzar</button>
+          </div>
+          <div class="step-list">
+            <button class="access-step active" data-step="0">
+              <b>01</b><strong>Residente autoriza</strong><span>Crea la invitación desde Resident.</span>
+            </button>
+            <button class="access-step" data-step="1">
+              <b>02</b><strong>NOCTA genera el pase</strong><span>Asocia vigencia, comunidad y permisos.</span>
+            </button>
+            <button class="access-step" data-step="2">
+              <b>03</b><strong>Guard valida el QR</strong><span>Recibe una respuesta operacional clara.</span>
+            </button>
+            <button class="access-step" data-step="3">
+              <b>04</b><strong>Admin conserva trazabilidad</strong><span>La actividad queda disponible para auditoría.</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="demo-output reveal">
+          <div class="output-icon" id="accessIcon">01</div>
+          <h3 id="accessTitle">Residente autoriza</h3>
+          <p id="accessDescription">Desde NOCTA Resident se crea la invitación para visitante, proveedor o familiar.</p>
+          <div class="status-card">
+            <div><span>Estado</span><b>Operación registrada</b></div>
+            <ul>
+              <li>Comunidad verificada</li>
+              <li>Vigencia del pase validada</li>
+              <li>Evento enviado a Admin</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="vision" class="section">
+      <div class="section-heading reveal">
+        <span>NOCTAVISION</span>
+        <h2>Cámaras que entienden lo que ocurre.</h2>
+        <p>NoctaVision usa cámaras IP, modelos de IA y análisis de zonas para generar alertas con contexto visual y operativo.</p>
+      </div>
+
+      <div class="vision-grid">
+        <div class="scenario-list reveal">
+          <button class="scenario active" data-scenario="person">
+            <strong>Persona detectada</strong><span>Entrada principal</span>
+          </button>
+          <button class="scenario" data-scenario="vehicle">
+            <strong>Vehículo entrando</strong><span>Acceso vehicular</span>
+          </button>
+          <button class="scenario" data-scenario="zone">
+            <strong>Zona restringida</strong><span>Perímetro norte</span>
+          </button>
+          <button class="scenario" data-scenario="time">
+            <strong>Fuera de horario</strong><span>Zona común</span>
+          </button>
+        </div>
+
+        <div class="camera-simulator reveal">
+          <div class="camera-top">
+            <span id="cameraName">Cámara: Entrada principal</span>
+            <b id="riskLevel">Riesgo: Medio</b>
+          </div>
+          <div class="video-grid"></div>
+          <div class="detection-box" id="detectionBox"><span id="detectionLabel">PERSONA DETECTADA</span></div>
+          <div class="trajectory"></div>
+          <div class="camera-info">
+            <article><b>Detección</b><span id="detectionText">Persona detectada cerca del punto de control.</span></article>
+            <article><b>Regla aplicada</b><span>Zona, horario y permanencia.</span></article>
+            <article><b>Respuesta</b><span id="responseText">Guard recibe alerta con captura y ubicación.</span></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="apps" class="section">
+      <div class="section-heading reveal">
+        <span>APLICACIONES CONECTADAS</span>
+        <h2>Cuatro módulos. Una sola operación.</h2>
+        <p>Cada aplicación cumple un rol claro y comparte reglas, eventos, permisos y trazabilidad dentro del núcleo NOCTA.</p>
+      </div>
+
+      <div class="apps-grid reveal">
+        <article>
+          <h3>NOCTA Resident</h3>
+          <p>El residente crea invitaciones, administra pases y consulta actividad.</p>
+          <ul><li>Invitaciones</li><li>Pases activos</li><li>Revocaciones</li><li>Avisos</li></ul>
+        </article>
+        <article>
+          <h3>NOCTA Guard</h3>
+          <p>El equipo de seguridad valida accesos y atiende eventos.</p>
+          <ul><li>Escáner QR</li><li>Turnos</li><li>Bitácora</li><li>Alertas</li></ul>
+        </article>
+        <article>
+          <h3>NOCTA Admin</h3>
+          <p>La administración configura, supervisa y audita toda la solución.</p>
+          <ul><li>Comunidades</li><li>Roles</li><li>Dispositivos</li><li>Reportes</li></ul>
+        </article>
+        <article>
+          <h3>NoctaVision</h3>
+          <p>Las cámaras se convierten en sensores inteligentes de seguridad.</p>
+          <ul><li>Personas</li><li>Vehículos</li><li>Zonas</li><li>Alertas</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading reveal">
+        <span>INTEGRACIÓN</span>
+        <h2>NOCTA conecta lo autorizado con lo observado.</h2>
+        <p>La diferencia está en unir la validación de accesos con los eventos visuales detectados por las cámaras.</p>
+      </div>
+
+      <div class="architecture reveal">
+        <div class="arch-side">
+          <article><b>Resident</b><span>Autoriza accesos</span></article>
+          <article><b>Guard</b><span>Valida y responde</span></article>
+        </div>
+        <div class="core">
+          <img src="assets/nocta-mark.png" alt="" aria-hidden="true">
+          <strong>NÚCLEO NOCTA</strong>
+        </div>
+        <div class="arch-side">
+          <article><b>Admin</b><span>Configura y audita</span></article>
+          <article><b>NoctaVision</b><span>Detecta y alerta</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="seguridad" class="section">
+      <div class="section-heading reveal">
+        <span>SEGURIDAD Y PRIVACIDAD</span>
+        <h2>Diseñado para operación real.</h2>
+        <p>Roles, permisos, dispositivos controlados, separación por comunidad y trazabilidad desde el origen.</p>
+      </div>
+
+      <div class="security-grid reveal">
+        <article><h3>Roles y permisos</h3><p>Cada usuario opera según comunidad, unidad y nivel autorizado.</p></article>
+        <article><h3>Eventos auditables</h3><p>Accesos, alertas e incidentes quedan registrados.</p></article>
+        <article><h3>Procesamiento controlado</h3><p>Video e IA pueden desplegarse por fases y con reglas claras.</p></article>
+        <article><h3>Multi-comunidad</h3><p>Los datos y la operación se separan por comunidad.</p></article>
+      </div>
+    </section>
+
+    <section id="piloto" class="section pilot-section">
+      <div class="pilot-card reveal">
+        <div>
+          <span>PILOTO NOCTA</span>
+          <h2>Implementación por fases para validar valor rápido.</h2>
+          <p>Comienza con control de acceso y luego incorpora NoctaVision sobre cámaras IP, zonas críticas y reglas de alerta.</p>
+          <div class="actions">
+            <a href="mailto:contacto@elipsoft.com?subject=Demo%20NOCTA" class="button button-primary">Solicitar demostración →</a>
+          </div>
+        </div>
+        <ol>
+          <li>Configurar comunidad y unidades</li>
+          <li>Registrar usuarios y dispositivos</li>
+          <li>Activar invitaciones y QR</li>
+          <li>Inventariar cámaras IP</li>
+          <li>Definir zonas y alertas</li>
+          <li>Ejecutar piloto controlado</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">
+      <img src="assets/nocta-badge.png" alt="Badge NOCTA" class="footer-badge">
+      <img src="assets/nocta-wordmark.png" alt="NOCTA" class="footer-wordmark">
+    </div>
+    <p>NOCTA · Access + Vision · ELIPSOFT</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
