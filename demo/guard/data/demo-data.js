@@ -15,6 +15,11 @@ export const demoData = {
       unit: 'Torre B · Apto 7C', resident: 'Daniel Herrera', reason: 'Visita',
       credential: 'Pase de visitante', validUntil: 'Ayer · 18:00', plate: null,
     },
+    revoked: {
+      id: 'visitor-ines', name: 'Inés Valera', document: 'V-20•••51', kind: 'revoked',
+      unit: 'Torre A · Apto 4B', resident: 'Lucía Andrade', reason: 'Visita',
+      credential: 'Pase de visitante', validUntil: 'Revocado', plate: null,
+    },
     inside: {
       id: 'visitor-julian', name: 'Julián Salas', document: 'V-24•••16',
       unit: 'Torre B · Apto 7C', resident: 'Daniel Herrera', reason: 'Servicio técnico',
@@ -38,6 +43,6 @@ export const defaultState = () => ({
   events: structuredClone(demoData.history),
   inside: [structuredClone(demoData.visitors.inside)],
   candidate: null,
-  manual: { name: '', document: '', phone: '', residentId: 'resident-lucia', reason: 'Visita', vehicle: false, plate: '' },
+  manual: { name: '', document: '', phone: '', residentId: 'resident-lucia', reason: 'Visita', vehicle: false, plate: '', authorization: '', authorizationNote: '' },
   message: null,
 });
