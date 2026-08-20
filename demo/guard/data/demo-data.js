@@ -1,9 +1,9 @@
 export const demoData = {
   guard: {
-    name: 'Elena Rojas',
+    name: 'Porfirio Torres',
     communityCode: 'MEDE',
     community: 'Multicentro Empresarial del Este',
-    shift: 'Diurno · 7:00 a.m. – 7:00 p.m.',
+    shift: '7:00 a.m. – 7:00 p.m.',
     gate: 'Acceso principal',
   },
   residents: [
