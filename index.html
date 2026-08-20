@@ -234,16 +234,19 @@
           <span class="state-review">Requiere verificación</span>
         </div>
       </div>
-      <div class="asset-placeholder product-placeholder guard-placeholder reveal" data-asset="asset-guard" aria-label="Espacio reservado para material visual de NOCTA Guard">
-        <span class="asset-label">Estados visuales de Guard pendientes</span>
-        <div class="guard-device" aria-label="Resultado principal: acceso autorizado">
-          <div class="guard-device-top"><span>NOCTA Guard</span><i aria-hidden="true"></i></div>
-          <div class="guard-verdict">
-            <span class="guard-verdict-icon" aria-hidden="true">✓</span>
-            <small>Resultado de verificación</small>
-            <strong>ACCESO AUTORIZADO</strong>
-          </div>
+      <div class="guard-demo-copy reveal">
+        <span>PRUEBA NOCTA GUARD</span>
+        <p>Experimenta cómo un vigilante verifica un acceso, registra una visita y continúa operando aun cuando falla la conexión.</p>
+        <div class="guard-demo-tags" aria-label="Capacidades mostradas en el demo">
+          <span>Con QR</span><span>Sin QR</span><span>Funciona offline</span>
         </div>
+        <div class="guard-demo-actions">
+          <a class="button button-primary" href="#guard-demo">Probar demo interactivo <span>→</span></a>
+          <a class="button button-ghost" href="./demo/guard/" target="_blank" rel="noopener">Abrir demo completo</a>
+        </div>
+      </div>
+      <div id="guard-demo" class="guard-demo-embed reveal">
+        <iframe src="./demo/guard/" title="Demo interactivo NOCTA Guard" loading="lazy"></iframe>
       </div>
     </section>
 
