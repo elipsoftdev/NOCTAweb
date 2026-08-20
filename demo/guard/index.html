@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b1220" />
+    <meta name="description" content="Demo interactivo aislado de NOCTA Guard con datos ficticios." />
+    <title>NOCTA Guard | Demo interactivo</title>
+    <link rel="icon" type="image/png" href="../../assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="demo-shell">
+      <aside class="demo-tools" aria-label="Controles del demo">
+        <a class="demo-brand" href="./" aria-label="Reiniciar y volver a NOCTA Guard">
+          <img src="../../assets/nocta-mark.png" alt="" />
+          <span><b>NOCTA</b><small>GUARD · DEMO</small></span>
+        </a>
+        <div class="tool-copy">
+          <span class="eyebrow">ENTORNO FICTICIO</span>
+          <p>Sin conexión a sistemas, credenciales ni QR operativos.</p>
+        </div>
+        <label class="connection-control" for="connectionToggle">
+          <span>
+            <b id="connectionLabel">En línea</b>
+            <small id="connectionDescription">Los registros se concilian automáticamente.</small>
+          </span>
+          <input id="connectionToggle" type="checkbox" role="switch" aria-label="Cambiar modo sin conexión" />
+          <i aria-hidden="true"></i>
+        </label>
+        <button class="tool-button" type="button" data-action="reset">↻ Reiniciar demo</button>
+        <a class="tool-link" href="../../" target="_blank" rel="noopener">Abrir sitio NOCTA ↗</a>
+      </aside>
+
+      <section class="device-stage" aria-label="Aplicación simulada NOCTA Guard">
+        <div class="device" id="guardApp">
+          <div class="device-top" aria-hidden="true"><span>09:41</span><span>● ● ●</span></div>
+          <div id="app" tabindex="-1" aria-live="polite"></div>
+        </div>
+      </section>
+    </main>
+    <noscript>Este demo necesita JavaScript para recorrer los escenarios.</noscript>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
