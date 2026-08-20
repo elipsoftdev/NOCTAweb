@@ -1,5 +1,11 @@
 export const demoData = {
-  guard: { name: 'Elena Rojas', gate: 'Acceso principal', community: 'Residencial Aurora' },
+  guard: {
+    name: 'Elena Rojas',
+    communityCode: 'MEDE',
+    community: 'Multicentro Empresarial del Este',
+    shift: 'Diurno · 7:00 a.m. – 7:00 p.m.',
+    gate: 'Acceso principal',
+  },
   residents: [
     { id: 'resident-lucia', name: 'Lucía Andrade', unit: 'Torre A · Apto 4B' },
     { id: 'resident-daniel', name: 'Daniel Herrera', unit: 'Torre B · Apto 7C' },
